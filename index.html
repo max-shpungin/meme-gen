@@ -3,33 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Orbitron&family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <title>the memes are my dremes</title>
 </head>
 <body>
-  <header>
-    <h1>memes memes and more memes</h1>
-  </header>
-
-  <main>
-    <form action="">
-      <label for="url">
-        <input type="text" name="url">
-      </label>
-      <label for="text-top">
-        <input type="text" name="text-top">
-      </label>
-      <label for="text-bottom">
-        <input type="text" name="text-bottom">
-      </label>
-      <button>bang!</button>
-    </form>
-    <section id="meme-landing">
-
-    </section>
-  </main>
-
-  <footer>
-    &copy; max shpungin 2023
-  </footer>
+  <wrapper>
+    <header>
+      <h1>memes memes and more memes</h1>
+    </header>
+    <main>
+      <section id = "form">
+        <form id="meme-form">
+            <h2><p>be the creator</p></h2>
+          <label>
+            where img?
+            <input type="text" name="url" placeholder="image URL">
+          </label>
+          <label>
+            what say?
+            <input type="text" name="text-top" placeholder="meme me">
+          </label>
+          <label>
+            say more?
+            <input type="text" name="text-bottom" placeholder="me is meme">
+          </label>
+          <button>bang!</button>
+        </form>
+      </section>
+      <section id="samples">
+        <h2>inspiration</h2>
+        <a href="https://www.usatoday.com/gcdn/-mm-/f05c0193c3029192c349b06a1dbeea13322035a7/c=11-22-1059-617/local/-/media/USATODAY/GenericImages/2014/05/12//1399925165000-Screen-Shot-2014-05-12-at-22238-PM.jpg"><button>much wow</button></a>
+        <a href="https://catamazing.com/cdn/shop/files/catshark.jpg"><button>so meme</button></a>
+      </section>
+    </main>
+  </wrapper>
+  <section id="meme-landing">
+  </section>
+  <script src="app.js"></script>
 </body>
 </html>

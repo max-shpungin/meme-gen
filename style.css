@@ -1,0 +1,172 @@
+body{
+  display:flex;
+  flex-direction: column;
+  background-color: black;
+  font-family: 'Poppins';
+}
+
+wrapper {
+  border-radius: 15px;
+}
+
+header {
+  align-self: center;
+  background-color:black;
+  width:100%;
+  height:auto;
+}
+
+header h1{
+  display:flex;
+  justify-content: center;
+}
+
+header h1 > p {
+  font-family: 'Orbitron';
+  font-size: 2em;
+  transition-duration: 1s;
+}
+
+main {
+  display:flex;
+  justify-content: space-evenly;
+
+}
+
+#meme-form{
+color: aliceblue;
+background-color: #15172B;
+border-radius: 10px;
+padding:20px;
+display: flex;
+flex-direction: column;
+}
+
+h2{
+  margin: 0;
+}
+
+#meme-form label {
+  width: 100%;
+  align-self: center;
+}
+
+input[type=text]{
+border-radius:10px;
+border: 0;
+background-color:#303245;
+color:aliceblue;
+padding: 5px;
+width:95%;
+height:30px;
+font-size: 1.1em;
+}
+
+#meme-form button {
+  width: 100%;
+  background-color: cornflowerblue;
+  color: aliceblue;
+  padding: 14px 20px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size:1.25em;
+}
+
+#samples {
+  color:aliceblue;
+  display:flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  width: 50vw;
+}
+
+#samples h3 {
+  display: absolute;
+  top: 10px;
+}
+
+#samples button {
+  width: 100%;
+  background-color: cornflowerblue;
+  color: aliceblue;
+  padding: 14px 20px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+img {
+  width: 500px;
+  height: auto;
+  border-radius: 15px;
+}
+
+section#meme-landing {
+  margin-top:15px;
+  display:flex;
+  flex-wrap: wrap;
+  gap:10px;
+}
+
+.meme {
+  position: relative;
+  text-align: center;
+  height:100%;
+  transition: 350ms;
+}
+
+.meme .image-text {
+  font-family: Anton;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 2.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.meme #image-text-top {
+  position: absolute;
+  margin: 0px;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.meme #image-text-bottom {
+  position: absolute;
+  margin:0px;
+  bottom: 12px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.meme:hover{
+  filter: grayscale(.5) opacity(.5);
+}
+
+.material-symbols-outlined {
+  display:none !important;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  font-size: 90px !important;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+}
+
+.meme:hover .material-symbols-outlined {
+  display:block !important;
+  filter: brightness(400%) opacity(1) !important;
+}
+
+a {
+  text-decoration: none;
+
+}
