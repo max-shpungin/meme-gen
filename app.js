@@ -49,6 +49,20 @@ body.addEventListener('click',function(event){
   } while (target && target !== body);
 })
 
+/** inspiration clicks */
+
+let samples = document.querySelectorAll('#samples a');
+
+for (let link of samples){
+  link.addEventListener('click',(event)=>{
+    event.preventDefault();
+    let imgLocation = link.getAttribute('href');
+    navigator.clipboard.writeText(imgLocation);
+    alert('Copied image link to clipboard!');
+  })
+}
+
+/**append an image function */
 function appendImage(imgURL,textTop='',textBottom=''){
   let img = document.createElement('img');
   let landingArea = document.querySelector('section#meme-landing');
